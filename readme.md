@@ -1,5 +1,5 @@
 # じゃんけんのwebサイト
-- https://github.com/R418S/02_19_jannken.git
+- https://r418s.github.io/02_19_janken/
 ## プロダクトの紹介
 - じゃんけん
 ## 苦労した点
