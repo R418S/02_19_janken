@@ -16,11 +16,11 @@
 <main>
     <ul>
         <li id="gu_btn"><img src="./img/rock.jpg" width="450" height="500"alt="rock"></li>
-        <li id="par_btn"><img src="./img/paper.jpg"alt="paper"></li>
-        <li id="cho_btn"><img src="./img/scissors.jpg"alt="scissors"></li>
+        <li id="par_btn"><img src="./img/paper.jpg" width="450" height="500"alt="paper"></li>
+        <li id="cho_btn"><img src="./img/scissors.jpg" width="450" height="500"alt="scissors"></li>
     </ul>
  <div id="com_hand">
-    <img id="cpu" src="../img/hand of the computer.jpg"alt="Hand of the computer">
+    <img id="cpu" src="./img/hand of the computer.jpg"alt="Hand of the computer">
  </div>
     <div>
     <img id="CP_pa" class="POP" src="./img/CP_paper.jpg"alt="">
@@ -43,16 +43,16 @@
      
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
+    <script>
        $(function () {
            const result = ['Rock','Scissors','Paper'];
 
        $('#gu_btn').on('click', function () {
-        //  自分の手はグー
-        let rand = Math.floor(Math.random() * 3)
-        // 　０コンピューターグー、１コンピューターチョキ、２コンピューターパー
-        // 　コンピューターの手を表示
-          $('#com_hand').text('Hand of the computer：'+ result[rand])
+        　　// 自分の手はグー
+            let rand=Math.floor(Math.random() * 3)
+            // ０コンピューターグー、１コンピューターチョキ、２コンピューターパー
+        　　// 　コンピューターの手を表示
+          　$('#com_hand').text('Hand of the computer：'+ result[rand])
           if(rand==0){
             $('#judgment').text('draw');
         } else if(rand==1){
@@ -63,18 +63,18 @@
     });
 
         $('#par_btn').on('click', function () {
-            // 自分の手はチョキ
+            // 自分の手はパー
             let rand=Math.floor(Math.random() * 3)
             // ０コンピューターグー、１コンピューターチョキ、２コンピューターパー
             // コンピューターの手を表示
             $('#com_hand').text('Hand of the computer：'+ result[rand])
-        　　if(rand==0){
-            　　$('#judgment').text('Win');
-        　　} else if(rand==1){
-            　　$('#judgment').text('Loss');
-        　　} else{
-            　　$('#judgment').text('Draw');
-        　　}
+        　if(rand==0){
+            $('#judgment').text('Win');
+        } else if(rand==1){
+            $('#judgment').text('Loss');
+        } else{
+            $('#judgment').text('Draw');
+        }
     });
 
         $('#cho_btn').on('click', function () {
@@ -83,13 +83,13 @@
             // ０コンピューターグー、１コンピューターチョキ、２コンピューターパー
         　　// 　コンピューターの手を表示 
             $('#com_hand').text('Hand of the computer：'+ result[rand])
-        　　if(rand==0){
-            　$('#judgment').text('Loss');
-        　　} else if(rand==1){
+        　if(rand==0){
+            $('#judgment').text('Loss');
+        } else if(rand==1){
             　$('#judgment').text('Draw');
-        　　} else{
+        } else{
             　$('#judgment').text('Win');
-        　　}
+        }
     });
 });
 </script>

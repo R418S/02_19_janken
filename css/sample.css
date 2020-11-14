@@ -3,7 +3,7 @@ body{
     padding:0;
     text-align:left;
     font-size: 32px;
-}
+    }
 header{
     background-image: center;
 }
@@ -20,11 +20,14 @@ footer{
 }
 
 ul{
-    padding: 0;
-    display:table;  /* 定義 */
-    table-layout: fixed;
+    /* display:table;  定義 */ */ */
+    /* table-layout: flex: ;; */ */
+    flex-wrap: wrap;
     padding:10px;
-    width:100%;
+    widows: 100%; */
+    width: calc(100% / 3 - 60px);
+    object-fit: cover; 
+    float: left;
 }
 li{
     text-align: center;
